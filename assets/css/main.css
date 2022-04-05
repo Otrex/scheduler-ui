@@ -1,0 +1,141 @@
+
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+
+
+/* sidebar */
+
+/* checkbox */
+/* Hide the browser's default checkbox */
+
+.check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.sidebar{
+  /* background: #ececec; */
+  background: #fff;
+  width: 290px;
+  overflow-y: scroll;
+  transition: width 0.5s ease-in-out;
+  height: 100vh;
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    background: rgba(236,236,236, 1);
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s width;
+  }
+}
+
+.menu{
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.menu li{
+  font-size: 14px;
+}
+
+.menu::-webkit-scrollbar {
+  width: 0.5em;
+}
+  
+.menu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+.border-radius-14px{
+  border-radius: 14px 0px 0px 14px;
+}
+a.nuxt-link-exact-active {
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+.dashboard-sidebar-links{}
+
+.dashboard-sidebar-links.nuxt-link-exact-active svg{
+  fill: #1d5cfc;
+}
+.dashboard-sidebar-links.nuxt-link-exact-active{
+  color: #1d5cfc;
+}
+
+
+
+
+
+.layout {
+  height: 100vh;
+  overflow: hidden;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.main {
+  display: block;
+  width: calc(100% - 290px);
+  left: 290px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* background: #ececec; */
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+}
+
+.main_checked {
+  display: block;
+  width: calc(100% - 73px);
+  left: 73px;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* background: #ececec; */
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 992px) {
+  .main {
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* background: #ececec; */
+    background: #fff;
+  }
+}

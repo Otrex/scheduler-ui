@@ -1,0 +1,5 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* Custom CSS. Ensure this comes before the tailwind utilities*/
+/* @import 'vue-toast-notification/dist/theme-default.css'; */
+@import 'tailwindcss/utilities';
